@@ -25,11 +25,13 @@ pub fn main() void {
 
     // Please set the continue expression so that we get the desired
     // results in the print statement below.
-    while (n < 1000) : ??? {
+    while (n < 1000) : (n += 1022) {
         // Print the current number
         std.debug.print("{} ", .{n});
     }
 
     // As in the last exercise, we want this to result in "n=1024"
     std.debug.print("n={}\n", .{n});
+
+    // const a: i32 = undefined;
 }
